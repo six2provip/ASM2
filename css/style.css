@@ -10,7 +10,23 @@ header {
     position: fixed;
     z-index: 5;
 }
-
+.banner1 img{
+    animation: hien1 1.25s ease-in-out 1 alternate ;
+}
+@keyframes hien1{   
+    0%{
+        opacity: 0.2;
+        transform: translateX(100%);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .menu {
     width: 50%;
     height: 52px;
@@ -48,8 +64,18 @@ header {
     background-color: rgb(43, 39, 39);
     border: 1px solid rgb(255, 255, 255);
     position: absolute;
+    animation: zoom 0.3s ease-in-out;
 }
-
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .smenu>li {
     display: block;
 }
@@ -60,7 +86,7 @@ header {
 
 .menu>li:hover .smenu {
     display: block;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out ;
 
 }
 
@@ -110,6 +136,21 @@ p {
     float: left;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    animation: hien 3s ease-in-out 1 alternate;
+}
+@keyframes hien{
+    0%{
+        opacity: 0.2;
+        transform: translate3d(100px,200px,300px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translate3d(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0);
+    }
 }
 
 .col3 img {
@@ -127,6 +168,7 @@ p {
 .col3:hover img {
     transform: scale(1.2);
     opacity: 0.4;
+
 }
 
 .ml {

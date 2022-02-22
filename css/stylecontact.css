@@ -49,6 +49,17 @@ header {
     background-color: rgb(43, 39, 39);
     border: 1px solid rgb(255, 255, 255);
     position: absolute;
+    animation: zoom 0.3s ease-in-out;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .smenu>li {
@@ -111,7 +122,9 @@ p {
     float: left;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+
 }
+
 
 .col3 img {
     width: 100%;
@@ -324,6 +337,17 @@ p {
     height: 100%;
     padding: 30px 30%;
     background-color: rgb(255, 255, 255);
+    animation: hien 1s ease-in-out alternate;
+}
+@keyframes hien{
+    0%{
+        opacity: 0.2;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .contact::after{
     content: '';
