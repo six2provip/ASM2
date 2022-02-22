@@ -49,6 +49,17 @@ header {
     background-color: rgb(43, 39, 39);
     border: 1px solid rgb(255, 255, 255);
     position: absolute;
+    animation: zoom 0.3s ease-in-out;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .smenu>li {
@@ -326,6 +337,21 @@ p {
     background: #fff8f8;
     text-align: center;
     margin-top: 17%;
+    animation: hien 1s ease-in-out 1 alternate;
+}
+@keyframes hien{
+    0%{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    50%{
+        opacity: 0.6;
+        transform: translate3d(0.6);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(1);
+    }
 }
 
 .login h1 {

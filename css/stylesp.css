@@ -49,6 +49,17 @@ header {
     background-color: rgb(43, 39, 39);
     border: 1px solid rgb(255, 255, 255);
     position: absolute;
+    animation: zoom 0.3s ease-in-out;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .smenu>li {
@@ -365,7 +376,7 @@ p {
 
 .khung1 {
     width: 100%;
-
+    animation: hien 1s ease-in-out;
     height: 640px;
 }
 
@@ -381,7 +392,7 @@ p {
 .khungchu {
     width: 40%;
     height: 630px;
-
+    animation: hien 1s ease-in-out;
     margin-left: 550px;
     float: left;
     position: absolute;
@@ -390,12 +401,21 @@ p {
 .khungmota {
     width: 20%;
     height: 630px;
-
+    animation: hien 1s ease-in-out;
     margin-left: 1170px;
     position: absolute;
 
 }
-
+@keyframes hien{
+    0%{
+        opacity: 0.2;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .khungchu h5 {
     font-size: 17px;
 }
